@@ -1,7 +1,7 @@
 # Final Project Report
 
-* Student Name:
-* Github Username:
+* Student Name: Bryce Dunlap
+* Github Username: Bryce72
 * Semester:
 * Course:
 
