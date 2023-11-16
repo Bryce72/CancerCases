@@ -2,7 +2,7 @@
 
 * Student Name: Bryce Dunlap
 * Github Username: Bryce72
-* Semester:
+* Semester: Fall 2023
 * Course:
 
 
