@@ -7,17 +7,6 @@ print("The information provided here is thanks to the CDC and United States Canc
 print("This program aims to make the data provided by the CDC more convienently accessible to read.\n\n")
 
 
-
-
-
-
-
-
-
-
-
-
-
 '''
 This function askes which gender they would like to see data on.
 
@@ -38,7 +27,24 @@ def get_gender():
 
 
 '''
+This function will ask for the specific race that the user wants.
+'''
+#def get_race():
+    
+
+
+
+
+
+
+
+
+'''
 A function that will ask for specific State.
+
+Set up a cool dictionary for gathering states: (key = abbreviation of state, value = Full state name)
+
+Does not include Hawaii or Puerto Rico because the data provided unfortunately does not either. 
 
 returns a string
 '''
@@ -94,7 +100,7 @@ def get_state():
         'WV': 'West Virginia',
         'WY': 'Wyoming'
         }
-    
+
     state_input = input("Enter a State or the abbreviation to a State: ").strip().capitalize()
     abbreviation = state_input.upper()
     if abbreviation in states_dictionary:
@@ -104,6 +110,7 @@ def get_state():
     else:
         print("Enter a valid State")
         return get_state()
+
 
 '''
 A function that will show the highest incidence rates for all cancers, all races and all states and both genders.
@@ -118,6 +125,10 @@ def highest_cancer_incident_out_of_all():
                 max = max_count
                 max_row = row
     return max_row
+
+'''
+Least common cancer filtered by state and/or gender
+'''
 
 
 
