@@ -10,7 +10,7 @@ print("This program aims to make the data provided by the CDC more convienently 
 
 
 '''
-A function that will show the highest incidence rates for all cancers, all races and all states and both genders.
+A function that will show the State that has the most cancer from 2016-2020; all races of both male and female (Incidence rate) .
 '''
 def highest_cancer_incident_out_of_all():
     max = 0
@@ -30,7 +30,7 @@ Least common cancer filtered by state and/or gender
 
 
 '''
-Most common cancer filtered by State; State is user inputed
+Most common cancer filtered by State; State is user inputed same with gender
 '''
 def most_common_cancer_per_state(state, gender):
     print("Here, will show you the most prevalent cancer cases by state and gender of your choice to search.")
@@ -66,10 +66,11 @@ def most_common_cancer_per_state(state, gender):
 
 
 
-def main():
+#def main():
 
     # Get the state and gender the user wants to gather the most common cancer per state/gender.
-    common_cancer_by_state = most_common_cancer_per_state(input_actions.get_state(), input_actions.get_gender())
-    print(f"The most common cancer in {common_cancer_by_state[1]} for {common_cancer_by_state[6]} is {common_cancer_by_state[7]} cancers.")
+  #  common_cancer_by_state = most_common_cancer_per_state(input_actions.get_state(), input_actions.get_gender())
+ #   print(f"The most common cancer in {common_cancer_by_state[1]} for {common_cancer_by_state[6]} is {common_cancer_by_state[7]} cancers.")
+    # print(highest_cancer_incident_out_of_all())
 
-# main()
+#main()
