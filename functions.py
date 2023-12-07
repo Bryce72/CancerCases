@@ -4,10 +4,6 @@ import input_actions
 
 df = pd.read_csv('BYAREA_modified.txt', sep='|')
 
-print("The information provided here is thanks to the CDC and United States Cancer Statistics (USCS):https://www.cdc.gov/cancer/uscs/dataviz/download_data.html")
-print("This program aims to make the data provided by the CDC more convienently accessible to read.\n\n")
-
-
 
 '''
 A function that will show the State that has the most cancer from 2016-2020; all races of both male and female (Incidence rate) .
@@ -23,9 +19,22 @@ def highest_cancer_incident_out_of_all():
                 max_row = row
     return max_row
 
+
+
+
 '''
 Least common cancer filtered by state and/or gender
 '''
+def lowest_cancer_incident_out_of_all():
+    min_count = 10000
+    min_row = None
+    for row in df.itertuples():
+        if '~' not in str(row.COUNT) and '+' not in str(row.COUNT) and '-' not in str(row.COUNT) and 'United States (comparable to ICD-O-2)' not in str(row.AREA) and 'All Cancer Sites Combined' in str(row.SITE) and 'All Races' in str(row.RACE) and '2016-2020' in str(row.YEAR) and 'Male and Female' in str(row.SEX):
+            count = int(row.COUNT)
+            if count < min_count:
+                min_count = count
+                min_row = row
+    return min_row
 
 
 
