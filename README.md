@@ -75,7 +75,7 @@
 
     You wont see this code in the submission but it was important in creating some of the functions and even the dictionary of states. As the column selection was interchangable such as using ['SITE'] to get a print out of all the cancer sites (names of the cancers) within the text file in a way where it didn't print a million baggilion times and only once.
 
-    What I do need a further understanding on is integrating my code to the GUI I made. This was a very difficult part. Ofcourse I started off with importing the files where my functions and user inputs were. But creating the functionality behind each code became a challenging task. 
+    What I do need a further understanding on is integrating my code to the GUI I made. This was a very difficult part. Ofcourse I started off with importing the files where my functions and user inputs were. But creating the functionality behind each code became a challenging task.
 
     ```python
     def highest_cancer_incidence_state(self):

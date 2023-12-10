@@ -17,24 +17,21 @@ class MyGUI:
 
         self.root.iconbitmap(r'favicon.ico')    # changed itkinter stock photo.
 
-
         self.textbox = tk.Text(self.root, height=5, font=('Arial', 16))
         self.textbox.pack(padx = 10, pady = 10)
         self.textbox.config(state=tk.DISABLED)
 
-
         # This button is for the function that iterates through all the data in the text file to find the state with the highest incidence rate of cancer from 2016-2020, ALL genders, out of all cancers and all races
         self.button_highest_incidence = tk.Button(self.root, text="Click to see State with highest cancer incidence", font=('Arial', 12), command=self.highest_cancer_incidence_state)
         self.button_highest_incidence.pack(padx = 6, pady = 6)
+
         # same as the highest incidence but obviously gets the lowest
         self.button_highest_incidence = tk.Button(self.root, text="Click to see State with lowest cancer incidence", font=('Arial', 12), command=self.lowest_cancer_incidence_state)
         self.button_highest_incidence.pack(padx = 6, pady = 6)
 
-
         # this is the tough one that opens a whole new interphase
         self.button_highest_incidence = tk.Button(self.root, text="Click to here to choose a State and see the most prevalent cancer in the State", font=('Arial', 12), command=self.open_state_selection_window)
         self.button_highest_incidence.pack(padx = 6, pady = 6)
-
 
         # Simple button to quit the program
         self.quit_button = tk.Button(self.root, text='Quit', font=('Arial', 18), command =self.root.destroy)

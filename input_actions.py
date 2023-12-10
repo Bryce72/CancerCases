@@ -97,13 +97,13 @@ def get_race():
         print("Please enter a valid number corresponding to specified race...\n\n\n")
         get_race()
     print("winner")
-# This above function does NOT pass edge case testing when ran in terminal, GUI is good to go though.
 
+#  I need to fix the range in which the number the user can input is... and i need to fix if they typed a letter so it doesnt pop up an error as it is right now.
 
 '''
 A function that will ask for specific State.
 Set up a cool dictionary for gathering states: (key = abbreviation of state, value = Full state name)
-Does not include Hawaii or Puerto Rico because the data provided unfortunately does not either.
+Does not include Hawaii or Puerto Rico because the data provided unfortunately does not either. 
 returns a string
 '''
 def get_state():
